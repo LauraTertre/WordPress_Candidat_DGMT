@@ -13,16 +13,7 @@ Template Name: Propositions
 
     <h2><?php the_title(); ?></h2>
 
-<?php 
-    $terms = get_terms( 'genre', 'orderby=count&hide_empty=0' );
-    if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
-    echo '<ul>';
-    foreach ( $terms as $term ) {
-        echo '<li><a href="'.get_permalink(73).'?genre='.$term->slug.'" >' . $term->name . '</a></li>';
-    }
-    echo '</ul>';
-   }
-?>
+
 
 <!-- Gestion dynamique du display des thématiques en un menu -->
 <div class="tags">
@@ -59,7 +50,7 @@ if ( $the_query->have_posts() ) {
         $the_query->the_post();
 ?>
 <?php
-// recuperation des thématiques, ajout dans un
+// recuperation des thématiques, ajout dans un array
 $catList = array();
     $terms = get_the_terms(get_the_id(), 'thematique');
     $count = count( $terms );
