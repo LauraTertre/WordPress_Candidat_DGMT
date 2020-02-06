@@ -1,0 +1,314 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                Global
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(230, 230, 230);
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                Header
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Header - Menu de WordPress
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.menu-menu-du-header-container {
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(250, 250, 250);
+}
+.menu-menu-du-header-container li {
+    display: inline-block;
+    margin: auto 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(65, 105, 225);
+}
+.menu-menu-du-header-container #menu-item-136 a {
+    padding: 15px;
+    border-radius: 25px;
+    font-weight: 700;
+    color: rgb(250, 250, 250);
+    background-color: rgb(225, 65, 65);
+}
+.menu-menu-du-header-container a:hover {
+    filter: brightness(1.2);
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    Image Mise en Avant et Titre H1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.hero {
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 80px;
+}
+h1 {
+    display: inline-block;
+    position: relative;
+    top: 250px;
+    left: 50px;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 700;
+    color: rgb(250, 250, 250);
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                            Main
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+main *, main * * {
+    margin-bottom: 20px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                Candidat
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.candidate-info {
+    width: 75%;
+    padding: 40px;
+    margin: auto;
+    margin-bottom: 80px;
+    text-align: justify;
+    border-radius: 5px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0px 8px 20px rgb(0, 0, 0, 0.05);
+}
+.candidate-info h3 {
+    margin: 50px 0;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(65, 105, 225);
+}
+.candidate-info p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                Team
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.team-member {
+    width: 40%;
+    margin-bottom: 100px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0px 8px 20px rgb(0, 0, 0, 0.05);
+}
+.team-member-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+.team-member-name {
+    font-size: 30px;
+    color: rgb(225, 65, 65);
+    font-weight: 700;
+}
+.team-member-content p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.team-member .learn-more {
+    display: block;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: rgb(250, 250, 250);
+    background-color: rgb(65, 105, 225);
+}
+.team-member .learn-more:hover{
+    filter: brightness(1.2);
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                            Proposition
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.propositions {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.propositions .tags {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+.propositions .tags a{
+    padding: 15px;
+    color: rgb(250, 250, 250);
+    background-color: rgb(225, 65, 65);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.propositions .tags a:hover{
+    filter: brightness(1.2);
+}
+.propositions article{
+    display: none;
+    width: 40%;
+    margin: auto 30px;
+    margin-bottom: 20px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0px 8px 20px rgb(0, 0, 0, 0.05);
+    border-radius: 5px;
+    padding: 20px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Propositions - Classe necessaire pour le js
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.propositions article.display {
+    display: inline-block;
+}
+.propositions div {
+    margin-bottom: 0;
+}
+.propositions article .proposition-title {
+    font-size: 20px;
+    color: rgb(225, 65, 65);
+    font-weight: 700;
+}
+.propositions article p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.propositions article .learn-more {
+    display: block;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: rgb(250, 250, 250);
+    background-color: rgb(65, 105, 225);
+}
+.propositions article .learn-more:hover{
+    filter: brightness(1.2);
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        Actualites
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.news .news-article {
+    width: 65%;
+    height: max-content;
+    display: flex;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0px 8px 20px rgb(0, 0, 0, 0.05);
+}
+.news-article div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    line-height: 1.5;
+}
+.news-article .news-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(225, 65, 65);
+}
+.news-article p {
+    font-size: 20px;
+}
+.news .learn-more {
+    display: block;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: rgb(250, 250, 250);
+    background-color: rgb(65, 105, 225);
+}
+.news .learn-more:hover{
+    filter: brightness(1.2);
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                Footer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+footer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(25, 25, 25);
+    color: rgb(250, 250, 250);
+}
+footer nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+footer nav h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 800;
+}
+footer nav a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(250, 250, 250);
+}
+footer nav a:hover {
+    filter: brightness(1.2);;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                Home
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.homepage .team-member {
+    width: 20%;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                General
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+h2 {
+    display: block;
+    margin: 70px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(225, 65, 65);
+}
+.homepage .propositions .logo-container {
+    font-size: 25px;
+    color: rgb(15, 15, 15);
+}
+.homepage .propositions .link-to-propositions {
+    width: 250px;
+    display: block;
+    margin: auto;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    color: rgb(250, 250, 250);
+    background-color: rgb(65, 105, 225);
+}
+.homepage .propositions .link-to-propositions:hover{
+    filter: brightness(1.2);
+}
+.homepage .logo {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 80px;
+}
