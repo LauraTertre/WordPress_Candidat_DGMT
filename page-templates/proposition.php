@@ -61,7 +61,6 @@ if ( $the_query->have_posts() ) {
 <?php
 // recuperation des thématiques, ajout dans un
 $catList = array();
-    // a utiliser dans la boucle WordPress ou ds la WP_QUERY
     $terms = get_the_terms(get_the_id(), 'thematique');
     $count = count( $terms );
     if ( $count > 0 ) {

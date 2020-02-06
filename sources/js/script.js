@@ -10,7 +10,6 @@ for ( var i = 0; i < categories.length; i++){
         for ( var i = 0; i < articlesArray.length ; i++)
         {
             let article = articlesArray[i];
-            // console.log(article.classList)
 
         if (article.classList.contains(theCategory.classList.toString())){
             article.classList.add('display');

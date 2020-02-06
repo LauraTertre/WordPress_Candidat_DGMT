@@ -22,10 +22,6 @@ Template Name: Equipe
 
             while ( $the_query->have_posts() ) {
                 $the_query->the_post();
-                // if(has_post_thumbnail())
-                // {
-                //   the_post_thumbnail( 'single_thumbnail');
-                // }
     ?>
                 <article class="team-member">
                     <div class="team-member-content">
